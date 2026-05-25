@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lapakkuuu/pages/splashscreenr.dart';
+import 'package:lapakkuuu/pages/loginr.dart';
 
 void main() {
   runApp(lapakku());
@@ -15,9 +15,6 @@ class lapakku extends StatefulWidget {
 class _lapakkuState extends State<lapakku> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Splashscreenr(),
-      debugShowCheckedModeBanner: false,
-    );
+    return MaterialApp(home: Loginr(), debugShowCheckedModeBanner: false);
   }
 }

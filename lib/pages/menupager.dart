@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lapakkuuu/models/menumodelr.dart';
 import 'package:lapakkuuu/pages/chatsr.dart';
 import 'package:lapakkuuu/pages/homer.dart';
-import 'package:lapakkuuu/pages/notifr.dart';
+import 'package:lapakkuuu/pages/profilepr.dart';
 
 class Menupager extends StatefulWidget {
   const Menupager({super.key});
@@ -21,7 +21,7 @@ class _MenuPageState extends State<Menupager> {
       color: Colors.black,
     ),
     1: Menumodelr(
-      page: Notifr(),
+      page: Homer(),
       icon: Icons.notifications,
       label: "Notif",
       color: Colors.black,
@@ -30,6 +30,12 @@ class _MenuPageState extends State<Menupager> {
       page: Chatsr(),
       icon: Icons.mail,
       label: "Chats",
+      color: Colors.black,
+    ),
+    3: Menumodelr(
+      page: Profilepr(),
+      icon: Icons.person,
+      label: "Profile",
       color: Colors.black,
     ),
   };
@@ -54,7 +60,7 @@ class _MenuPageState extends State<Menupager> {
           return BottomNavigationBarItem(
             icon: Icon(n.value.icon, color: Colors.black87),
             label: n.value.label,
-            backgroundColor: Colors.black,
+            backgroundColor: Colors.deepPurple.shade500,
             activeIcon: Icon(n.value.icon, color: n.value.color),
           );
         }).toList(),
