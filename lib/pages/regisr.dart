@@ -23,13 +23,13 @@ class _LovelyRegisterScreenState extends State<Regisr> {
         width: double.infinity,
         height: double.infinity,
         padding: EdgeInsets.all(20),
-        decoration: BoxDecoration(color: Colors.deepPurple.shade500),
+        decoration: BoxDecoration(color: Colors.purple.shade700),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Column(
               children: [
-                Text("LAPAKKU", style: TextStyle(fontSize: 50)),
+                Image.asset("assets/image/lapakku.jpeg"),
                 SizedBox(height: 50),
                 TextField(
                   controller: _nama,

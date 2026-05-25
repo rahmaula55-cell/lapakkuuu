@@ -54,18 +54,9 @@ class _LoginPageState extends State<Loginr> {
             ],
           ),
           child: SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                SizedBox(height: 85),
-                Text(
-                  "LAPAKKU",
-                  style: TextStyle(
-                    color: Colors.purple.shade900,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 70,
-                  ),
-                ),
+            child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween ,
+              children: [SizedBox(height: 200,),
+                Text("LAPAKKU",style: TextStyle(color: Colors.purple.shade900,fontWeight: FontWeight.bold,fontSize: 70),),
                 SizedBox(height: 80),
                 TextField(
                   controller: _username,
