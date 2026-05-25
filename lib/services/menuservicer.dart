@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lapakkuuu/models/menumodelr.dart';
-import 'package:lapakkuuu/pages/chatsr.dart';
+import 'package:lapakkuuu/pages/chatkei.dart';
 import 'package:lapakkuuu/pages/homer.dart';
-import 'package:lapakkuuu/pages/notifr.dart';
+import 'package:lapakkuuu/pages/notif_kei.dart';
+
 
 List<Menumodelr> menu = [
   Menumodelr(
@@ -12,13 +13,13 @@ List<Menumodelr> menu = [
     color: Colors.black,
   ),
   Menumodelr(
-    page: Notifr(),
+    page: NotifKei(),
     icon: Icons.notifications,
     label: "Notif",
     color: Colors.black,
   ),
   Menumodelr(
-    page: Chatsr(),
+    page: Chatkei(),
     icon: Icons.mail,
     label: "Chats",
     color: Colors.black,

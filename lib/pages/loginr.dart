@@ -35,29 +35,29 @@ class _LoginPageState extends State<Loginr> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        padding: EdgeInsets.all(size.width / 5),
+        padding: EdgeInsets.all(size.width / 180),
         decoration: BoxDecoration(color: Colors.white),
         child: Container(
           width: size.width,
           height: size.width,
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: Colors.deepPurple.shade700.withValues(alpha: 0.6),
+            color: Colors.purple.shade700.withValues(alpha: 0.6),
             borderRadius: BorderRadius.circular(20),
             boxShadow: [
               BoxShadow(
                 offset: Offset(1.5, 1.5),
-                color: Colors.purple.withValues(alpha: 0.6),
+                color: Colors.purple.shade700.withValues(alpha: 50),
                 blurRadius: 0,
-                spreadRadius: 0,
+                spreadRadius: 110,
               ),
             ],
           ),
           child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Image.asset("assets/image/lapakku.jpeg", height: 75),
-                SizedBox(height: 15),
+            child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween ,
+              children: [SizedBox(height: 200,),
+                Text("LAPAKKU",style: TextStyle(color: Colors.purple.shade900,fontWeight: FontWeight.bold,fontSize: 70),),
+                SizedBox(height: 80),
                 TextField(
                   controller: _username,
                   keyboardType: TextInputType.text,
@@ -73,7 +73,7 @@ class _LoginPageState extends State<Loginr> {
                     ),
                   ),
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 30),
                 TextField(
                   controller: _password,
                   keyboardType: TextInputType.text,

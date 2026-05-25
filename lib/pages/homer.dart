@@ -16,7 +16,7 @@ class _HomerState extends State<Homer> {
         width: double.infinity,
         height: double.infinity,
         padding: EdgeInsets.all(20),
-        decoration: BoxDecoration(color: Colors.deepPurple.shade700),
+        decoration: BoxDecoration(color: Colors.purple.shade700),
         child: SingleChildScrollView(
           child: Column(
             children: [
