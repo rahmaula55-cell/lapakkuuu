@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lapakkuuu/pages/pencarianmenur.dart';
 import 'package:lapakkuuu/services/categorsr.dart';
 import 'package:lapakkuuu/widgets/bannerss/bannersr.dart';
 import 'package:lapakkuuu/widgets/bannerss/bannersr1.dart';
@@ -22,6 +23,7 @@ class _HomerState extends State<Homer> {
         height: double.infinity,
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(color: Colors.purple.shade700),
+
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -46,6 +48,13 @@ class _HomerState extends State<Homer> {
                     ),
                   ),
                 ),
+              ),
+              TextButton(
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Pencarianmenur()),
+                ),
+                child: Text("Pencarian"),
               ),
               SizedBox(height: 20),
               //Banner

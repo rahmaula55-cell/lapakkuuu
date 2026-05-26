@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lapakkuuu/pages/pencariankei_page.dart';
 import 'package:lapakkuuu/pages/splashscreen_kei.dart';
-
 
 void main() {
   runApp(lapakku());
@@ -18,7 +16,7 @@ class _lapakkuState extends State<lapakku> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: PencariankeiPage(),
+      home: SplashscreenKei(),
       debugShowCheckedModeBanner: false,
     );
   }

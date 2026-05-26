@@ -48,7 +48,7 @@ class _KeranjangrState extends State<Keranjangr> {
                 width: size.width - 40,
                 height: 600,
                 child: ListView.builder(
-                  itemCount: 1,
+                  itemCount: 10,
                   scrollDirection: Axis.vertical,
                   itemBuilder: (context, i) => Card(
                     elevation: 4,

@@ -27,9 +27,17 @@ class _LovelyRegisterScreenState extends State<Regisr> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            SizedBox(height: 20),
             Column(
               children: [
-                Image.asset("assets/image/lapakku.jpeg"),
+                Text(
+                  "LAPAKKU",
+                  style: TextStyle(
+                    color: Colors.purple.shade900,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 50,
+                  ),
+                ),
                 SizedBox(height: 50),
                 TextField(
                   controller: _nama,
@@ -121,7 +129,7 @@ class _LovelyRegisterScreenState extends State<Regisr> {
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 5),
             Row(
               children: [
                 Checkbox(
@@ -158,6 +166,7 @@ class _LovelyRegisterScreenState extends State<Regisr> {
                   );
                 }
               },
+
               child: TextButton(
                 onPressed: () => Navigator.push(
                   context,
@@ -166,7 +175,7 @@ class _LovelyRegisterScreenState extends State<Regisr> {
                 child: Text("Register"),
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10),
             TextButton(
               onPressed: () => Navigator.push(
                 context,

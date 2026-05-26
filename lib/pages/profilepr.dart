@@ -8,6 +8,9 @@ class Profilepr extends StatefulWidget {
 }
 
 class _Profilepr extends State<Profilepr> {
+  String username = "";
+  String id = "";
+  String email = "";
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -15,7 +18,6 @@ class _Profilepr extends State<Profilepr> {
       appBar: AppBar(
         backgroundColor: Colors.deepPurpleAccent,
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Profile",
@@ -30,12 +32,13 @@ class _Profilepr extends State<Profilepr> {
           decoration: BoxDecoration(color: Colors.purple.shade700),
         ),
       ),
-      drawer: Drawer(
-        child: Container(
-          color: Colors.deepPurpleAccent,
-          child: Text("LAPAKKU"),
-        ),
-      ),
+      backgroundColor: Colors.purpleAccent.shade700,
+      //drawer: Drawer(
+      //child: Container(
+      //color: Colors.deepPurpleAccent,
+      //child: Image.asset("assets/image/fto.56.png", height: 70),
+      //),
+      //),
     );
   }
 }

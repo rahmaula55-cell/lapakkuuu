@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:flutter/material.dart';
 import 'package:lapakkuuu/pages/loginr.dart';
-
 
 class SplashscreenKei extends StatefulWidget {
   const SplashscreenKei({super.key});
@@ -17,7 +16,7 @@ class _SplashscreenKeiState extends State<SplashscreenKei> {
   void initState() {
     t = Timer.periodic(
       const Duration(milliseconds: 2500),
-          (timer) => Navigator.pushReplacement(
+      (timer) => Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => Loginr()),
       ),
@@ -37,18 +36,14 @@ class _SplashscreenKeiState extends State<SplashscreenKei> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SizedBox(height: 100),
+            SizedBox(height: 45),
             Text(
               " LAPAKKU",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 80,),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 80),
             ),
             SizedBox(width: 1),
             Image.asset("assets/image/fto.56.png"),
-            SizedBox(height: 100),
-            Column(
-              children: [
-              ],
-            )
+            SizedBox(height: 50),
           ],
         ),
       ),

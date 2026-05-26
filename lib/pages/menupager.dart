@@ -3,7 +3,7 @@ import 'package:lapakkuuu/models/menumodelr.dart';
 import 'package:lapakkuuu/pages/chatkei.dart';
 import 'package:lapakkuuu/pages/homer.dart';
 import 'package:lapakkuuu/pages/notif_kei.dart';
-
+import 'package:lapakkuuu/pages/profilepr.dart';
 
 class Menupager extends StatefulWidget {
   const Menupager({super.key});
@@ -33,6 +33,12 @@ class _MenuPageState extends State<Menupager> {
       label: "Chats",
       color: Colors.black,
     ),
+    3: Menumodelr(
+      page: Profilepr(),
+      icon: Icons.person,
+      label: "Profile",
+      color: Colors.black,
+    ),
   };
 
   @override
@@ -55,7 +61,7 @@ class _MenuPageState extends State<Menupager> {
           return BottomNavigationBarItem(
             icon: Icon(n.value.icon, color: Colors.black),
             label: n.value.label,
-            backgroundColor: Colors.black,
+            backgroundColor: Colors.deepPurple.shade800,
             activeIcon: Icon(n.value.icon, color: n.value.color),
           );
         }).toList(),

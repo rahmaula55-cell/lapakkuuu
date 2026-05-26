@@ -3,7 +3,7 @@ import 'package:lapakkuuu/models/menumodelr.dart';
 import 'package:lapakkuuu/pages/chatkei.dart';
 import 'package:lapakkuuu/pages/homer.dart';
 import 'package:lapakkuuu/pages/notif_kei.dart';
-
+import 'package:lapakkuuu/pages/profilepr.dart';
 
 List<Menumodelr> menu = [
   Menumodelr(
@@ -24,4 +24,5 @@ List<Menumodelr> menu = [
     label: "Chats",
     color: Colors.black,
   ),
+  Menumodelr(page: Profilepr(), icon: Icons.person, label: "Profile", color: Colors.black)
 ];

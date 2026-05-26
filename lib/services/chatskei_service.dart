@@ -2,9 +2,9 @@ import 'package:lapakkuuu/models/chatskei_model.dart';
 
 List<ChatskeiModel> chats = [
   ChatskeiModel(
-      Image: "assets/image/shop.jpg",
-      Nama: "Sholine",
-      Subtitle: "Selamat pagi kakak kami ada produk baru nih",
+    Image: "assets/image/shop.jpg.jpeg",
+    Nama: "Sholine",
+    Subtitle: "Selamat pagi kakak kami ada produk baru nih",
   ),
   ChatskeiModel(
     Image: "assets/image/shop3.jpg",
