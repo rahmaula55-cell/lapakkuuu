@@ -32,13 +32,12 @@ class _Profilepr extends State<Profilepr> {
           decoration: BoxDecoration(color: Colors.purple.shade700),
         ),
       ),
-      backgroundColor: Colors.purpleAccent.shade700,
-      //drawer: Drawer(
-      //child: Container(
-      //color: Colors.deepPurpleAccent,
-      //child: Image.asset("assets/image/fto.56.png", height: 70),
-      //),
-      //),
+      drawer: Drawer(
+        child: Container(
+          color: Colors.deepPurpleAccent,
+          child: Image.asset("assets/image/fto.56.png", height: 70),
+        ),
+      ),
     );
   }
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lapakkuuu/services/pencarianmenuser_rhma.dart';
+import 'package:lapakkuuu/widgets/pencarianwidget_rhma.dart';
 
 class Pencarianmenur extends StatefulWidget {
   const Pencarianmenur({super.key});
@@ -37,6 +39,25 @@ class _PencarianmenurState extends State<Pencarianmenur> {
                       bottomLeft: Radius.circular(500),
                       bottomRight: Radius.circular(500),
                       topRight: Radius.circular(500),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                width: size.width,
+                height: penn.length / 2 * 500,
+                padding: const EdgeInsets.all(10),
+                child: GridView.builder(
+                  itemCount: penn.length,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 20,
+                    crossAxisSpacing: 10,
+                  ),
+                  itemBuilder: (context, i) => Card(
+                    child: PencarianwidgetRhma(
+                      imageUrl: penn[i].imageUrl,
+                      title: penn[i].title,
                     ),
                   ),
                 ),

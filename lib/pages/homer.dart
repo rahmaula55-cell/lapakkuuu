@@ -23,7 +23,6 @@ class _HomerState extends State<Homer> {
         height: double.infinity,
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(color: Colors.purple.shade700),
-
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -36,6 +35,13 @@ class _HomerState extends State<Homer> {
                   alignLabelWithHint: true,
                   prefixIcon: Icon(Icons.search_rounded),
                   focusColor: Colors.blueAccent,
+                  counter: TextButton(
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Pencarianmenur()),
+                    ),
+                    child: Icon(Icons.search),
+                  ),
                   fillColor: Colors.white,
                   filled: true,
                   icon: Icon(Icons.shopping_basket, color: Colors.black),
@@ -48,13 +54,6 @@ class _HomerState extends State<Homer> {
                     ),
                   ),
                 ),
-              ),
-              TextButton(
-                onPressed: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Pencarianmenur()),
-                ),
-                child: Text("Pencarian"),
               ),
               SizedBox(height: 20),
               //Banner
